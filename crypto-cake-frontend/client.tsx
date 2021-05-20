@@ -1,12 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components'
+import { light, dark } from '@pancakeswap/uikit'
 
 import App from '@layouts/App';
 
 render(
-  <BrowserRouter>
-    <App />,
-  </BrowserRouter>,
+  <ThemeProvider theme={light}>
+      <App />,
+  </ThemeProvider>,
     document.querySelector('#app'),
 );

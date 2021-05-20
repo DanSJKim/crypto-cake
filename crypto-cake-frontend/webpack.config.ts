@@ -18,6 +18,7 @@ const config: webpack.Configuration = {
       '@views': path.resolve(__dirname, 'views'),
       '@utils': path.resolve(__dirname, 'utils'),
       '@typings': path.resolve(__dirname, 'typings'),
+      '@style': path.resolve(__dirname, 'style'),
     },
   },
   entry: {
@@ -42,10 +43,10 @@ const config: webpack.Configuration = {
           ],
           env: {
             development: {
-              plugins: ['@emotion', require.resolve('react-refresh/babel')],
+              // plugins: ['@pancakeswap/uikit', require.resolve('react-refresh/babel')],
             },
             production: {
-              plugins: ['@emotion', { sourceMap: true }]
+              // plugins: ['@pancakeswap/uikit', { sourceMap: true }]
             }
           },
         },

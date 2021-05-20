@@ -7,7 +7,7 @@
     "module": "esnext",
     "moduleResolution": "Node",
     "target": "es5",
-    "strict": true,
+    // "strict": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
@@ -16,7 +16,8 @@
       "@layouts/*": ["layouts/*"],
       "@views/*": ["views/*"],
       "@utils/*": ["utils/*"],
-      "@typings/*": ["typings/*"]
+      "@typings/*": ["typings/*"],
+      "@style/*": ["style/*"]
     }
   }
 }
